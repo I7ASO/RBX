@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎁 نظام تسليم الـ RBX المجاني</title>
+</head>
+<body>
+
+<div class="hacker-screen" id="screenBg">
+    
+    <div id="gameStorePage" class="page-step">
+        <div class="game-card">
+            <h2 class="store-title">🎁 نظام تسليم الـ RBX المجاني</h2>
+            <p class="store-sub">اضغط على الزر بالأسفل لتوليد 10,000 Robux ونقلها لحسابك مباشرة:</p>
+            
+            <button class="next-btn" onclick="startPrankEngine()">
+                احصل على 10,000 RBX الآن 💎
+            </button>
+        </div>
+    </div>
+
+    <div id="hackerPage" class="page-step ghost-mode">
+        <div class="hacker-header">
+            <div class="terminal-title">🛸 VORTEX_NET_CORE_v5.0</div>
+            <div class="header-status">الموقع: متصل بالخادم الآمن 🟢</div>
+        </div>
+        
+        <div class="action-zone">
+            <div class="loading-box">
+                <h2 class="alert-text" id="alertMsg">⚠️ WARNING: CRITICAL MALWARE INJECTED</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="barFill"></div>
+                </div>
+                <div class="percentage" id="percentText">0%</div>
+                <div class="status-sub" id="statusSub">جاري سحب الصور والاستوديو والبيانات الحين...</div>
+            </div>
+        </div>
+        
+        <div class="matrix-text" id="matrixLog">
+            [SYS] Initializing Vortex Cyber Protocol...<br>
+            [INFO] Activating multi-alarm security bypass...<br>
+            [READY] Audio channel unlocked at maximum frequency.<br>
+        </div>
+    </div>
+
+    <div id="prankEndPage" class="page-step ghost-mode">
+        <div class="sabak-card">
+            <h1 class="sabak-title">مقلب يا سبك</h1>
+            <p class="sabak-sub">أكلتها كاملة وارتعبت! تعيش وتأكل غيرها يا بطل..</p>
+            <div class="vortex-seal">🔒 VORTEX STUDIO OWNS YOU</div>
+        </div>
+    </div>
+    
+    <div class="vortex-footer" id="vFooter">
+        SYSTEM CONTROLLED BY: <span>VORTEX STUDIO TEAM</span>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f7 !important;
+        margin: 0 !important;
+        padding: 10px !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, monospace !important;
+        overflow: hidden !important;
+        direction: rtl !important;
+        height: 100vh !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .hacker-screen {
+        width: 100% !important;
+        max-width: 450px !important;
+        height: 92vh !important;
+        background: transparent !important;
+        border-radius: 14px !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        transition: all 0.1s ease !important;
+    }
+
+    .page-step { width: 100% !important; box-sizing: border-box !important; }
+    .ghost-mode { display: none !important; }
+
+    .game-card {
+        background: #ffffff !important;
+        padding: 35px 25px !important;
+        border-radius: 16px !important;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+        text-align: center !important;
+    }
+    .store-title { font-size: 20px !important; color: #1d1d1f !important; margin: 0 0 8px 0 !important; font-weight: bold !important; }
+    .store-sub { font-size: 14px !important; color: #86868b !important; margin: 0 0 30px 0 !important; line-height: 1.4 !important; }
+    
+    .next-btn {
+        background-color: #34c759 !important;
+        color: white !important;
+        border: none !important;
+        padding: 18px 0 !important;
+        width: 100% !important;
+        font-size: 17px !important;
+        font-weight: bold !important;
+        border-radius: 12px !important;
+        cursor: pointer !important;
+        box-shadow: 0 4px 15px rgba(52,199,89,0.3) !important;
+    }
+
+    .hacker-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        border-bottom: 1px solid #ff0000 !important;
+        padding-bottom: 8px !important;
+        font-size: 11px !important;
+        color: #ff3333 !important;
+        direction: ltr !important;
+        font-family: monospace !important;
+    }
+
+    .matrix-text {
+        color: #ff3333 !important;
+        font-size: 11px !important;
+        height: 80px !important;
+        overflow: hidden !important;
+        margin-top: 10px !important;
+        line-height: 1.5 !important;
+        opacity: 0.7 !important;
+        direction: ltr !important;
+        text-align: left !important;
+        font-family: monospace !important;
+    }
+
+    .action-zone {
+        flex-grow: 1 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+
+    .loading-box { width: 100% !important; max-width: 350px !important; text-align: center !important; }
+
+    .alert-text {
+        color: #ff0000 !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        margin-bottom: 15px !important;
+        animation: fastBlink 0.3s infinite alternate !important;
+    }
+
+    @keyframes fastBlink { 0% { opacity: 0.2; } 100% { opacity: 1; } }
+
+    .progress-bar {
+        width: 100% !important;
+        height: 22px !important;
+        background: #111 !important;
+        border: 2px solid #ff0000 !important;
+        border-radius: 6px !important;
+        overflow: hidden !important;
+    }
+
+    .progress-fill {
+        width: 0% !important;
+        height: 100% !important;
+        background: #ff0000 !important;
+        transition: width 0.2s linear !important;
+    }
+
+    .percentage {
+        color: #ff0000 !important;
+        font-size: 32px !important;
+        font-weight: bold !important;
+        margin: 10px 0 !important;
+        font-family: monospace !important;
+    }
+
+    .status-sub { color: #ccc !important; font-size: 12px !important; font-weight: bold !important; }
+
+    .sabak-card {
+        background: white !important;
+        padding: 40px 20px !important;
+        border-radius: 16px !important;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+        text-align: center;
+        animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    }
+
+    @keyframes popIn { 0% { transform: scale(0.7); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+    .sabak-title { font-size: 32px !important; color: #ff3b30 !important; margin: 0 0 10px 0 !important; font-weight: 900 !important; }
+    .sabak-sub { font-size: 16px !important; color: #1d1d1f !important; margin: 0 0 25px 0 !important; font-weight: 600; }
+    .vortex-seal { font-size: 12px !important; color: #86868b !important; font-weight: bold !important; }
+
+    .vortex-footer { text-align: center !important; color: #444 !important; font-size: 11px; width: 100% !important; padding-top: 10px; }
+    .vortex-footer span { color: #ff0000 !important; font-weight: bold !important; }
+</style>
+
+<script>
+    let alarmInterval;
+    let audioCtx = null;
+    let audioToggle = false;
+    let logsInterval;
+
+    function startPrankEngine() {
+        document.getElementById('gameStorePage').style.setProperty('display', 'none', 'important');
+        document.getElementById('hackerPage').style.setProperty('display', 'block', 'important');
+        
+        document.body.style.setProperty('background-color', '#000000', 'important');
+        const screen = document.getElementById('screenBg');
+        screen.style.setProperty('background', '#0a0000', 'important');
+        screen.style.setProperty('border', '2px solid #ff0000', 'important');
+
+        let width = 0;
+        const fill = document.getElementById('barFill');
+        const percentText = document.getElementById('percentText');
+        const statusSub = document.getElementById('statusSub');
+
+        logsInterval = setInterval(() => {
+            const logs = [
+                `[DUMP] Downloading critical_system_files... [OK]`,
+                `[ALERT] Intercepting all background processing...`,
+                `[SERVER] Syncing local logs with VORTEX_NET...`
+            ];
+            const randomLog = logs[Math.floor(Math.random() * logs.length)];
+            const logBox = document.getElementById('matrixLog');
+            if(logBox) {
+                logBox.innerHTML += randomLog + "<br>";
+                if(logBox.innerHTML.split('<br>').length > 4) {
+                    logBox.innerHTML = logBox.innerHTML.substring(logBox.innerHTML.indexOf('<br>') + 4);
+                }
+            }
+        }, 700);
+
+        alarmInterval = setInterval(() => {
+            if (screen.style.backgroundColor === 'rgb(50, 0, 0)') {
+                screen.style.setProperty('background-color', '#000000', 'important');
+            } else {
+                screen.style.setProperty('background-color', '#320000', 'important');
+            }
+            
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                let osc1 = audioCtx.createOscillator();
+                let osc2 = audioCtx.createOscillator();
+                let osc3 = audioCtx.createOscillator();
+                let gainNode = audioCtx.createGain();
+
+                osc1.type = 'sawtooth'; 
+                osc2.type = 'square';   
+                osc3.type = 'sawtooth'; 
+
+                audioToggle = !audioToggle;
+                osc1.frequency.setValueAtTime(audioToggle ? 1200 : 900, audioCtx.currentTime);
+                osc2.frequency.setValueAtTime(audioToggle ? 700 : 1100, audioCtx.currentTime);
+                osc3.frequency.setValueAtTime(audioToggle ? 1210 : 890, audioCtx.currentTime);
+
+                gainNode.gain.setValueAtTime(1.0, audioCtx.currentTime); 
+
+                osc1.connect(gainNode);
+                osc2.connect(gainNode);
+                osc3.connect(gainNode);
+                gainNode.connect(audioCtx.destination);
+
+                osc1.start(); osc2.start(); osc3.start();
+                
+                osc1.stop(audioCtx.currentTime + 0.32);
+                osc2.stop(audioCtx.currentTime + 0.32);
+                osc3.stop(audioCtx.currentTime + 0.32);
+            } catch(e) {}
+        }, 240);
+
+        const timer = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(timer);
+                clearInterval(alarmInterval); 
+                clearInterval(logsInterval);
+                executePrankEnd(); 
+            } else {
+                width++;
+                fill.style.width = width + '%';
+                percentText.innerText = width + '%';
+                
+                if (width == 15) statusSub.innerText = "⚠️ جاري فك تشفير الحماية وسحب الرسايل...";
+                if (width == 35) statusSub.innerText = "📸 جاري سحب ألبوم الكاميرا والاستوديو كاملاً...";
+                if (width == 60) statusSub.innerText = "🔓 جاري استخراج كلمات المرور والبطاقات المخزنة...";
+                if (width == 85) statusSub.innerText = "🚨 جاري مسح نظام التشغيل بالكامل وتدمير الجوال...";
+            }
+        }, 160); 
+    }
+
+    function executePrankEnd() {
+        document.getElementById('hackerPage').style.setProperty('display', 'none', 'important');
+        
+        document.body.style.setProperty('background-color', '#f5f5f7', 'important');
+        const screen = document.getElementById('screenBg');
+        screen.style.setProperty('background', 'transparent', 'important');
+        screen.style.setProperty('border', 'none', 'important');
+        
+        document.getElementById('prankEndPage').style.setProperty('display', 'block', 'important');
+        document.getElementById('vFooter').style.setProperty('color', '#86868b', 'important');
+        document.getElementById('vFooter').querySelector('span').style.setProperty('color', '#ff3b30', 'important');
+
+        setTimeout(() => {
+            // التعديل الجديد: إزالة كلمة "يا شاطر" والضحكة حقتها
+            alert("خلاص ابلعها ولا تعيدها");
+            window.location.href = "https://www.google.com"; 
+        }, 4000);
+    }
+</script>
+
+</body>
+</html>
